@@ -1,0 +1,145 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #152238;
+  background: #f3f6fb;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, #e2f2ff, transparent 42%),
+    #f3f6fb;
+}
+
+.card {
+  width: min(100%, 440px);
+  background: white;
+  border: 1px solid #e7edf5;
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: 0 22px 70px #17365d14;
+}
+
+.brand-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #087cf0, #13b8b0);
+}
+
+.eyebrow {
+  margin: 24px 0 8px;
+  color: #087cf0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(25px, 5vw, 31px);
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin: 10px 0 26px;
+  color: #66748a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d9e1ec;
+  border-radius: 11px;
+  font: inherit;
+  outline: none;
+}
+
+input:focus {
+  border-color: #087cf0;
+  box-shadow: 0 0 0 3px #087cf01a;
+}
+
+button {
+  margin-top: 13px;
+  border: 0;
+  border-radius: 11px;
+  padding: 14px;
+  color: white;
+  background: #087cf0;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0669cf;
+}
+
+button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+.message {
+  margin: 16px 0 0;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.error {
+  color: #a11d2b;
+  background: #fff0f1;
+}
+
+.success {
+  color: #12633b;
+  background: #eafaf1;
+}
+
+.footnote {
+  margin: 20px 0 0;
+  color: #78869a;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 25px 21px;
+  }
+}
